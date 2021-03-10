@@ -1,1 +1,1 @@
-console.log('hello')
+import './js/food-list-item-render';
