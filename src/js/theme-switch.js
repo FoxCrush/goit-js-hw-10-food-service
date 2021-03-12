@@ -6,10 +6,8 @@ const Theme = {
 };
 if (bodyEl) {
     bodyEl.classList.add(Theme.LIGHT);
+    localStorage.setItem('theme', Theme.LIGHT);
     themeSwitchEl.checked = false;
-} else {
-    bodyEl.classList.add(Theme.DARK);
-    themeSwitchEl.checked = true;
 }
 function switchElToggled() {
     if (localStorage.getItem('theme') === Theme.LIGHT) {
