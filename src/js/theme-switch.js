@@ -4,7 +4,7 @@ const Theme = {
   LIGHT: 'light-theme',
   DARK: 'dark-theme',
 };
-if (localStorage.getItem('theme') === Theme.LIGHT) {
+if (bodyEl) {
     bodyEl.classList.add(Theme.LIGHT);
     themeSwitchEl.checked = false;
 } else {
