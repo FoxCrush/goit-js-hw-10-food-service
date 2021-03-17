@@ -37,6 +37,7 @@ if (!localStorage.getItem('theme')) {
 }
 if (bodyEl.classList.length === 0) {
     setStarterBodyTheme();
+    console.log("");
 }
 
 function switchElToggled() {
